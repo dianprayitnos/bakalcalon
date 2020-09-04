@@ -55,7 +55,7 @@ class Bobot extends CI_Controller {
 
 	public function insert()
 	{	
-		$data['id_kriteria'] = $this->input->post('id_kriteria'); 	
+		$data['id_kriteria'] = $this->input->post('id_kriteria'); // mengganti id kriteria menjadi apa gitu	
 		$data['nama_Bobot']	= $this->input->post('nama_Bobot');
 		$data['bobot']	= $this->input->post('Bobot');
 		$result = $this->Bobot_model->insert($data);
